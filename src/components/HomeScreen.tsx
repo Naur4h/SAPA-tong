@@ -21,7 +21,7 @@ export default function HomeScreen() {
   const filterMendesak = unit.filterSisaHari <= 7;
 
   return (
-    <div className="flex-1 overflow-y-auto pb-4">
+   <div className="min-h-0 flex-1 overflow-y-auto pb-4">
       <div className="rounded-b-3xl bg-gradient-to-b from-accent to-primary px-5 pb-6 pt-6 text-cream">
         <div className="flex items-center justify-between">
           <div>
