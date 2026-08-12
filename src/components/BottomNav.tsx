@@ -25,7 +25,10 @@ export default function BottomNav({
         return (
           <button
             key={key}
-            onClick={() => onChange(key)}
+            onClick={() => {
+  alert(`KLIK ${key}`);
+  onChange(key);
+}}
             className="flex flex-col items-center gap-1 rounded-xl px-4 py-1.5"
           >
             <Icon
