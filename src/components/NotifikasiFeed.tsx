@@ -17,21 +17,29 @@ export default function NotifikasiFeed() {
           Aktivitas terbaru
         </h3>
       </div>
+
       <ul>
         {notifikasi.map((n) => {
           const t = tingkatConfig[n.tingkat];
+
           return (
             <li
               key={n.id}
               className="flex gap-3 border-b border-stone-line px-5 py-4 last:border-b-0"
             >
-              <span className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${t.dot}`} />
+              <span
+                className={`mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full ${t.dot}`}
+              />
+
               <div className="min-w-0">
                 <p className="font-body text-[13px] leading-snug text-ink">
                   {n.pesan}
                 </p>
+
                 <p className="mt-1 font-data text-[11px] text-ink-soft">
-                  <span className={`font-medium ${t.text}`}>{n.unitKode}</span>
+                  <span className={`font-medium ${t.text}`}>
+                    {n.unitKode}
+                  </span>
                   {" · "}
                   {n.lokasi} · {n.waktu}
                 </p>

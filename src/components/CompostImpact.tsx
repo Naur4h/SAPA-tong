@@ -8,6 +8,7 @@ export default function CompostImpact() {
         <p className="font-data text-[11px] uppercase tracking-[0.18em] text-stone">
           04 — Dampak Filtrasi
         </p>
+
         <h3 className="mt-1 font-display text-[19px] font-semibold">
           Dari air lindi menjadi kompos
         </h3>
@@ -26,15 +27,18 @@ export default function CompostImpact() {
               {ringkasan.airLindiTerkumpul}
               <span className="text-sm text-paper/50"> L</span>
             </p>
+
             <p className="font-body text-[12px] text-paper/60">
               Air lindi tersaring hari ini
             </p>
           </div>
+
           <div>
             <p className="font-data text-[28px] font-semibold tracking-tight text-organik">
               {ringkasan.potensiKompos}
               <span className="text-sm text-paper/50"> kg</span>
             </p>
+
             <p className="font-body text-[12px] text-paper/60">
               Estimasi potensi kompos
             </p>
